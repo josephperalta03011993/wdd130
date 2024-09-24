@@ -1,0 +1,26 @@
+W1
+Setup
+- VS Code
+- Browser Extensions
+- GitHub 
+- Git in local machine
+- MS Teams
+Learning
+- File and Folder Naming Conventions
+  - use all lowercase syntax
+  - dont use space only dashes
+  - dont use special char
+  - use short meaningful names
+  - standard folders names (styles, images)
+- Intro to HTML
+  - https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+- Web Images (never use bitmap)
+  - older formats like PNG, JPEG, GIF 
+    have poor performance
+  - new formats WebP, AVIF
+
+W2
+Learning 
+- Commong Semantic Elements
+  - https://www.w3schools.com/html/html5_semantic_elements.asp
+  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#accessibility_concerns
