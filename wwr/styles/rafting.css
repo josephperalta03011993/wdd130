@@ -7,10 +7,6 @@
     --black: #000
 }
 
-header {
-    background-color: var(--primary-color);
-}
-
 .nav-header {
     padding-top: 2.5%;
     float: right;
