@@ -1,24 +1,42 @@
+/*
+In your wdd130 root site, open up your existing styles.css file.
+Create a :root {} rule at the top of the file.
+Review your course home page CSS a look for colors, fonts, sizes, and other values that are repeated.
+Replace those repeated CSS property values with CSS variables.
+Test your page in your local browser using Live Server.
+Commit and sync/push your work to your wdd130 GitHub Pages enabled repository.
+Share your work with others on MS Teams.
+*/
+:root {
+    --steelblue: #4682b4;
+    --white: #fff;
+    --lightgray: #eee;
+    --gray: #808080;
+    --darkgray: #333;
+    --black: #000;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: var(--steelblue);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: steelblue;
+    color: var(--steelblue);
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--steelblue);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--gray);
 }
 
 p {
@@ -30,12 +48,13 @@ main {
 }
 
 aside {
+    --light-black: rgba(0, 0, 0, 0.2); /*local var for lighter black*/
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--light-black);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--lightgray);
+    color: var(--darkgray);
     text-align: center;
 }
 
@@ -55,6 +74,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--black);
     text-align: center;
 }
