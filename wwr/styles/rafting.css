@@ -113,6 +113,13 @@ nav {
     border-radius: 5px;
     padding: 10px 0px 10px 0px;
     display: block;
+    background-color: var(--primary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--accent1-color);
+    outline: 1px solid var(--white);
+    transition: 0.3s;
 }
 /* end of navigation design*/
 
