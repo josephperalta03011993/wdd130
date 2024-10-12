@@ -13,19 +13,21 @@ header {
     grid-template-columns: auto auto auto;
     align-items: center;
     background-color: var(--accent1-color);
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 #logo {
     grid-column: 1 / span 2;
-    width: 60px;
+    width: 100px;
     border-radius: 50%;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 nav a {
@@ -61,8 +63,8 @@ p {
 article {
     position: absolute;
     top: 25%;
-    left: 10%;
-    right: 10%;
+    left: 5%;
+    right: 5%;
     background-color: var(--secondary-color);
     padding: 1%;
     background-color: rgba(97, 94, 32, .5);
@@ -182,15 +184,27 @@ figure figcaption {
 
 /* Footer CSS */
 footer {
-    background-color: var(--accent1-color);
-    color: var(--white);
     margin-top: 3%;
-    text-align: center;
-    padding: 2%;
+    background-color: var(--accent1-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.sociallinks img{
+footer p {
+    padding-top: 20px;
+}
+
+footer nav img {
     width: 50px;
     height: 50px;
-    padding: 0 .5%;
+    border-radius: 50%;
+}
+
+.footer-navigation {
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
