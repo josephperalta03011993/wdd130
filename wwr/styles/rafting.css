@@ -7,25 +7,25 @@
     --black: #000
 }
 
-.nav-header {
-    padding-top: 2.5%;
-    float: right;
-}
-
-.nav-header a {
+/* The header uses CSS Grid layout and is uniform in design. */
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
     background-color: var(--accent1-color);
-    color: var(--white);
-    padding: 10px;
-    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #logo {
-    width: 100px;
+    grid-column: 1 / span 2;
+    width: 60px;
+    border-radius: 50%;
 }
 
 body {
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -50,13 +50,17 @@ h2 {
     color: var(--primary-color);
 }
 
+#heading-paragraph {
+    color: white;
+}
+
 p {
     font-family: "Roboto";
 }
 
 article {
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 10%;
     right: 10%;
     background-color: var(--secondary-color);
@@ -87,16 +91,100 @@ article p {
     height: auto;
 }
 
-section img {
-    float: left;
-    width: 20%;
-    height: 170px;
+/* Use CSS Flex to create the horizontal layout in the nav */
+nav {
+    text-align: center;
 }
 
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    display: block;
+}
+
+.navigation a:hover {
+    color: var(--white);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/* end of navigation design*/
+
+/* Style the History section elements */
+.history {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.history-col1 {
+    grid-column: 1/4;
+    text-align: center;
+}
+.history-col2 {
+    grid-column: 1/2;
+}
+.history-col3 {
+    grid-column: 2/3;
+}
+.history-col4 {
+    grid-column: 3/4;
+}
+
+/* Adventure Image Gallery */
+.adventure {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.adventure h2 {
+    flex: 0 0 100%;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figure img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figure figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+/* end of adventure section */
+
+/* Footer CSS */
 footer {
     background-color: var(--accent1-color);
     color: var(--white);
-    margin-top: 20%;
+    margin-top: 3%;
     text-align: center;
     padding: 2%;
 }
