@@ -36,7 +36,7 @@ nav a {
     color: var(--white);
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 1%;
     right: 0;
@@ -222,4 +222,38 @@ footer nav img {
 .company-info {
     background-color: #eee;
     padding: 1.2rem;
+}
+
+.company-info h1 {
+    font-family: "Trade Winds", system-ui;
+    color: var(--primary-color);
+}
+
+/* Employee details - Contact Us Page */
+.employees {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 3%;
+}
+
+.employees figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.employees figure img {
+    max-width: 220px;
+    max-height: 250px;
+}
+
+.employees figure figcaption {
+    background-color: #222;
+    color: var(--white);
+    font: italic smaller sans-serif;
+    padding: 10px;
+    text-align: center;
 }
