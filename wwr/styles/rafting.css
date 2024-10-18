@@ -207,3 +207,19 @@ footer nav img {
     display: flex;
     gap: 10px;
 }
+
+.map iframe {
+    border: 0;
+    width: 100%;
+    height: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.company-info {
+    background-color: #eee;
+    padding: 1.2rem;
+}
