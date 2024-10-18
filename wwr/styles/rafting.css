@@ -214,7 +214,7 @@ footer nav img {
     height: 30rem;
 }
 
-.container {
+.contacts {
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -231,9 +231,15 @@ footer nav img {
 
 /* Employee details - Contact Us Page */
 .employees {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 3%;
+    width: 100%;
+}
+
+.employees h2 {
+    flex: 0 0 100%;
+    text-align: center;
 }
 
 .employees figure {
@@ -246,8 +252,8 @@ footer nav img {
 }
 
 .employees figure img {
-    max-width: 220px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 350px;
 }
 
 .employees figure figcaption {
