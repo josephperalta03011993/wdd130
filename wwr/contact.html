@@ -55,25 +55,33 @@
         <section class="contact-us">
             <h2>Contact Us</h2>
             <form>
-                <div>
+                <div class="form-item column2">
                     <label for="name">Fullname</label>
                     <input type="text" id="name" name="name">
                 </div>
-                <div>
+                <div class="form-item column2">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email">
                 </div>
-                <div>
+                <div class="form-item column1">
                     <p>Please select the purpose of your message:</p>
-                    <input type="radio" name="general-inq" id="general-inq">
+                    <div class="grid-item">
+                        <input type="radio" name="message-purpose" id="general-inq" value="General Inquiry">
                     <label for="general-inq">General Inquiry</label>
-                    <input type="radio" name="reservation-question" id="reservation-question">
-                    <label for="reservation-question">Reservation Question</label>
-                    <input type="radio" name="website-suggestion" id="website-suggestion">
-                    <label for="website-suggestion">Website Suggestion</label>
+                    </div>
+                    <div class="grid-item">
+                        <input type="radio" name="message-purpose" id="reservation-question" value="Reservation Question">
+                        <label for="reservation-question">Reservation Question</label>
+                    </div>
+                    <div class="grid-item">
+                        <input type="radio" name="message-purpose" id="website-suggestion" value="Website Suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </div>   
                 </div>
-                <div>
-                    <textarea name="message" id="message"></textarea>
+                <div class="form-item">
+                    <textarea name="message" id="message" placeholder="Write your message here" rows="7" cols="50"></textarea>
+                </div>
+                <div class="form-item">
                     <input type="checkbox" name="chk-subscribe" id="chk-subscribe">
                     <label for="chk-subscribe">Please subscribe me to the monthly newsletter</label>
                 </div>

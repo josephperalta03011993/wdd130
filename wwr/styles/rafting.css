@@ -30,6 +30,7 @@ body {
     padding-right: 3%; */
     padding: 0;
     margin: 0;
+    font-family: "Roboto";
 }
 
 nav a {
@@ -277,4 +278,31 @@ footer nav img {
     background-color: var(--primary-color);
     padding: .5rem;
     border-radius: .5rem;
+    margin-top: 10px;
+}
+
+form {
+    width: 40%;
+    text-align: left;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-bottom: .5rem;
+}
+
+input, select {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+textarea {
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
 }
