@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting Contact Us</title>
+    <title>White Water Rafting Contact</title>
     <link rel="icon" type="image/x-icon" href="images/raftingcompas.jpg">
     <meta name="author" content="Joseph Peralta">
     <meta name="description" content="This page will include contact information and a contact form which the user can submit to ask questions about the company and its services.">
@@ -51,6 +51,32 @@
                 <img src="images/bruce-mars.webp" alt="Boise River" width="370" height="500">
                 <figcaption>Bruce Mars</figcaption>
             </figure>
+        </section>
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label for="name">Fullname</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <p>Please select the purpose of your message:</p>
+                    <input type="radio" name="general-inq" id="general-inq">
+                    <label for="general-inq">General Inquiry</label>
+                    <input type="radio" name="reservation-question" id="reservation-question">
+                    <label for="reservation-question">Reservation Question</label>
+                    <input type="radio" name="website-suggestion" id="website-suggestion">
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
+                <div>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit" id="btn-submit" name="btn-submit">SEND</button>
+            </form>
         </section>
     </main>
     <footer>

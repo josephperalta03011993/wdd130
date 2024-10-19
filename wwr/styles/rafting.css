@@ -26,8 +26,10 @@ header {
 }
 
 body {
-    padding-left: 3%;
-    padding-right: 3%;
+    /* padding-left: 3%;
+    padding-right: 3%; */
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -116,7 +118,7 @@ nav {
     background-color: var(--primary-color);
 }
 
-.navigation a:hover {
+.navigation a:hover, #btn-submit:hover {
     background-color: var(--accent1-color);
     outline: 1px solid var(--white);
     transition: 0.3s;
@@ -183,7 +185,6 @@ figure figcaption {
 
 /* Footer CSS */
 footer {
-    margin-top: 3%;
     background-color: var(--accent1-color);
     color: var(--white);
     display: flex;
@@ -235,9 +236,10 @@ footer nav img {
     flex-wrap: wrap;
     margin-top: 3%;
     width: 100%;
+    padding-bottom: 1.2rem;
 }
 
-.employees h2 {
+.employees h2, .contact-us h2 {
     flex: 0 0 100%;
     text-align: center;
 }
@@ -262,4 +264,17 @@ footer nav img {
     font: italic smaller sans-serif;
     padding: 10px;
     text-align: center;
+}
+
+/* Contact Us */
+.contact-us {
+    background-color: #eee;
+    padding: 1.2rem;
+}
+
+#btn-submit {
+    color: white;
+    background-color: var(--primary-color);
+    padding: .5rem;
+    border-radius: .5rem;
 }
