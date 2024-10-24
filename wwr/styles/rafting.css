@@ -4,7 +4,8 @@
     --accent1-color: #563f1b;
     --accent2-color: #585858;
     --white: #fff;
-    --black: #000
+    --black: #000;
+    --dark-grey: #5a5a5a;
 }
 
 /* The header uses CSS Grid layout and is uniform in design. */
@@ -330,7 +331,7 @@ label {
     font-family: "Trade Winds", "system-ui";
 }
 
-#home-call-to-action button {
+#home-call-to-action a {
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
@@ -338,10 +339,16 @@ label {
     font-family: "Roboto";
     padding: .5rem 1.8rem;
     border-radius: .2rem;
-    margin-top: 26%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-top: 28%;
+    margin-left: 42%;
+    width: 150px;
+    text-decoration: none;
 }
 
-#home-call-to-action button:hover {
+#home-call-to-action a:hover {
     background-color: var(--white);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -351,10 +358,6 @@ label {
     text-align: center;
     width: 100%;
     padding: 7% 0;
-}
-
-.newsletter p{
-    color: grey;
 }
 
 .btn-layout {
@@ -378,7 +381,7 @@ label {
     border: thick var(--primary-color) solid;
     display: flex;
     flex-flow: column;
-    max-width: auto;
+    max-width: 220px;
     margin: auto;
 }
 
@@ -400,8 +403,39 @@ figure figcaption {
 }
 
 .offerings {
+    background-color: lightgray;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.fun-act {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: lightgray;
-    padding: 5%;
 }
+
+.offerings h2 {
+    text-align: center;
+    display: block;
+}
+
+/* JOIN US */
+.join-us {
+    padding: 5rem;
+}
+
+.join-us img {
+    box-shadow: 3px 3px 5px 1px grey;
+}
+
+.join-us-details {
+    position: absolute;
+    background-color: var(--accent1-color);
+    color: var(--white);
+    padding: 2.5rem;
+    width: 40%;
+    top: 242%;
+    left: 45%;
+    font-family: "Roboto";
+}
+
