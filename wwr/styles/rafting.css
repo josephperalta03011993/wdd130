@@ -155,6 +155,7 @@ nav {
     flex-wrap: wrap;
     text-align: center;
     margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .adventure h2 {
@@ -344,4 +345,63 @@ label {
     background-color: var(--white);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+}
+
+.newsletter form{
+    text-align: center;
+    width: 100%;
+    padding: 7% 0;
+}
+
+.newsletter p{
+    color: grey;
+}
+
+.btn-layout {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    padding: .5rem 1.8rem;
+    border-radius: .2rem;
+}
+
+.btn-layout:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Display Offering */
+.offerings figure {
+    border: thick var(--primary-color) solid;
+    display: flex;
+    flex-flow: column;
+    max-width: auto;
+    margin: auto;
+}
+
+.offerings figure:hover {
+    box-shadow: 5px 5px 20px 2px grey;
+}
+
+.offerings figure img {
+    width: 300px;
+    height: 300px;
+}
+
+figure figcaption {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font: smaller sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.offerings {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightgray;
+    padding: 5%;
 }
