@@ -5,7 +5,7 @@
     --accent2-color: #585858;
     --white: #fff;
     --black: #000;
-    --dark-grey: #5a5a5a;
+    --dark-grey: #424242;
 }
 
 /* The header uses CSS Grid layout and is uniform in design. */
@@ -440,3 +440,84 @@ figure figcaption {
     font-family: "Roboto";
 }
 
+/*----------------- Trips -----------------*/
+#wireframe-link {
+    color: var(--white);
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#trip-hero-banner {
+    width: 100%;
+    height: auto;
+}
+
+.trips-contact-us {
+    color: var(--white);
+    position: absolute;
+    left: 57%;
+    right: 0;
+    top: 50px;
+    font-family: "Roboto";
+    font-size: 50px;
+}
+
+.fun-vacation {
+    text-align: center;
+}
+
+.fun-vacation-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    font-family: "Roboto";
+    padding: 5rem;
+}
+
+.card img{
+    box-shadow: 2px 2px 12px 2px var(--dark-grey);
+    width: 200px;
+    height: 270px;
+}
+
+.trips-details {
+    text-align: center;
+    padding: 1.5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+table th {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: 1rem;
+    border: 1px solid var(--black);
+}
+
+table td {
+    border: 1px solid var(--black);
+}
+
+.sample-activity-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: var(--white);
+}
+
+.box {
+    background-color: var(--accent1-color);
+    padding: 1rem;
+}
+/*----------------- End of Trips -----------------*/
