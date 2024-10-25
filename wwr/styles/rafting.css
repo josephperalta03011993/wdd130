@@ -55,6 +55,7 @@ nav a {
 h2 {
     font-family: "Roboto";
     color: var(--primary-color);
+    text-align: center;
 }
 
 #heading-paragraph {
